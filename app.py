@@ -10,7 +10,7 @@ with st.sidebar:
     
     selected = option_menu('Diagnosis Bar',
                           
-                          ['Parkinsons Prediction'],
+                          ['Parkinson'],
                           icons=['person'],
                           default_index=0)
 
