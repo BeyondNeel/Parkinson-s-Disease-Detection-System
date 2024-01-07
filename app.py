@@ -12,16 +12,16 @@ with st.sidebar:
     
     selected = option_menu('Diagnosis Bar',
                           
-                          ['Parkinsons Prediction'],
+                          ['Parkinsons Disease'],
                           icons=['person'],
                           default_index=0)
       
 
 # Parkinson's Prediction Page
-if (selected == "Parkinsons Prediction"):
+if (selected == "Parkinsons Disease"):
     
     # page title
-    st.title("Parkinson's Disease Prediction")
+    st.title("Parkinson's Disease Detection System")
     
     col1, col2, col3, col4, col5 = st.columns(5)  
     
