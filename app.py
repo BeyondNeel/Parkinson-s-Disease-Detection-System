@@ -1,8 +1,18 @@
 import pickle
 import streamlit as st
+from streamlit_option_menu import option_menu
 
 # loading the saved models
 parkinson = pickle.load(open('parkinson.sav', 'rb'))
+
+# sidebar for navigation
+with st.sidebar:
+    
+    selected = option_menu('Diagnosis Bar',
+                          
+                          ['Parkinsons Prediction'],
+                          icons=['person'],
+                          default_index=0)
 
 # Parkinson's Prediction Page
     # page title
